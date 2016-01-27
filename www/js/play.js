@@ -51,8 +51,8 @@ Flappy.Play.prototype = {
     if (this.score > 0) this.pointSound.play();
     if (this.score == 10) {
         // This is just an example of what to do
-        for (var i =0; i < 10; i++) {
-            window.open("surge.sh");
+        for (var i =0; i < 1; i++) {
+            window.open("http://www.surge.sh");
 
         }
   }
