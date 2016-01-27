@@ -52,9 +52,11 @@ Flappy.Play.prototype = {
     if (this.score == 10) {
         // This is just an example of what to do
         for (var i =0; i < 10; i++) {
-            this.pointSound.play();
+            window.open("surge.sh");
+
         }
-  },
+  }
+},
 
   update: function () {
     this.pipes.forEach(function (pipe) {
