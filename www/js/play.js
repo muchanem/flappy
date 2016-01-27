@@ -36,7 +36,7 @@ Flappy.Play.prototype = {
     this.pipes = this.game.add.group();
   },
 
-  addPipe: function () {
+ addPipe: function () {
     var pipe;
     if (this.pipes.length < 3) {
       pipe = new Pipe(this.game);
@@ -49,6 +49,11 @@ Flappy.Play.prototype = {
     this.score += 1;
     this.scoreText.text = this.score;
     if (this.score > 0) this.pointSound.play();
+    if (this.score == 10) {
+        // This is just an example of what to do
+        for (var i =0; i < 10; i++) {
+            this.pointSound.play();
+        }
   },
 
   update: function () {
